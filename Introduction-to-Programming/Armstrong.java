@@ -16,7 +16,7 @@ public class Armstrong {
             if (isArmstrong(num)) {
                 System.out.print(num + " ");
             }
-        }
+        } 
 
         scanner.close();
     }
