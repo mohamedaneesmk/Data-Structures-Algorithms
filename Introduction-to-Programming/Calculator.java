@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        float number1 = scanner.nextInt();
+        float number1 = scanner.nextInt(); 
         float number2 = scanner.nextInt();
         char operation = scanner.next().charAt(0);
 
