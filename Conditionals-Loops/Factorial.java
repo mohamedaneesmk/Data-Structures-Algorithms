@@ -18,20 +18,21 @@ import java.util.Scanner;
 
 public class Factorial {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        int number = scanner.nextInt();
-        int result = factorial(number);
-
-        System.out.println(result);
-        scanner.close();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+        
+        System.out.println("Factorial: " + factorial(n));
+        sc.close();
     }
-
-    // Recursive method
-    private static int factorial(int n) {
-        if (n == 0 || n == 1) {
-            return 1; // Base condition
+    
+    // Iterative approach - O(n) time, O(1) space
+    public static long factorial(int n) {
+        if (n < 0) return -1; // Invalid input
+        long result = 1;
+        for (int i = 2; i <= n; i++) {
+            result *= i;
         }
-        return n * factorial(n - 1); // Recursive call
+        return result;
     }
 }
