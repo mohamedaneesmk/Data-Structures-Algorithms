@@ -12,7 +12,7 @@ public class PalindromeNumber {
             System.out.println(num + " is not a palindrome");
         }
         sc.close();
-    }
+    } 
     
     // O(log n) time - number of digits
     public static boolean isPalindrome(int num) {
