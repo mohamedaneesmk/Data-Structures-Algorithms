@@ -14,7 +14,7 @@ public class VotingEligibilityChecker {
     
     // O(1) time complexity
     public static void checkEligibility(int age) {
-        if (isEligibleToVote(age)) {
+        if (isEligibleToVote(age)) { 
             System.out.println("You are eligible to vote");
         } else {
             System.out.println("You are not eligible to vote");
