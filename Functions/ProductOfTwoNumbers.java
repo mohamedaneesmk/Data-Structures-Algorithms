@@ -28,4 +28,4 @@ public class ProductOfTwoNumbers {
     public static long getProduct(long a, long b) {
         return a * b;
     }
-}
+} 
