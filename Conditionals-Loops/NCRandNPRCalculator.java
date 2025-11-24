@@ -13,7 +13,7 @@ public class NCRandNPRCalculator {
         } else {
             System.out.println("nPr = " + nPr(n, r));
             System.out.println("nCr = " + nCr(n, r));
-        }
+        } 
         sc.close();
     }
     
