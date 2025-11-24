@@ -14,4 +14,4 @@ public class FutureInvestmentValue {
         System.out.println("Future Investment Value: " + futureValue);
         sc.close();
     }
-}
+} 
