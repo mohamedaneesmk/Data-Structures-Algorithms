@@ -26,4 +26,4 @@ public class SumOfTwoNumbers {
     public static double calculateSum(double a, double b) {
         return a + b;
     }
-}
+} 
