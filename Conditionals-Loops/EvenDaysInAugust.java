@@ -13,7 +13,7 @@ public class EvenDaysInAugust {
         System.out.println();
     }
     
-    // Generalized method for any month
+    // Generalized method for any month 
     public static int countEvenDays(int daysInMonth) {
         return daysInMonth / 2;
     }
