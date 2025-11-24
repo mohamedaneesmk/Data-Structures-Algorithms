@@ -20,4 +20,4 @@ public class SumOfNNumbers {
     public static int sumOfFirstN(int n) {
         return n * (n + 1) / 2;
     }
-} 
+}  
