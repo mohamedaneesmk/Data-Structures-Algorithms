@@ -66,7 +66,7 @@ public class PrimeNumbersInRange {
             if (isPrime[i]) {
                 primes.add(i);
             }
-        }
+        } 
         return primes;
     }
 }
