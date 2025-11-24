@@ -26,4 +26,4 @@ public class HCFCalculator {
     public static int gcdRecursive(int a, int b) {
         return b == 0 ? a : gcdRecursive(b, a % b);
     }
-}
+} 
