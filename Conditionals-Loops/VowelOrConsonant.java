@@ -15,7 +15,7 @@ public class VowelOrConsonant {
         } else {
             System.out.println(ch + " is not a letter");
         }
-        sc.close();
+        sc.close(); 
     }
     
     // O(1) time complexity
