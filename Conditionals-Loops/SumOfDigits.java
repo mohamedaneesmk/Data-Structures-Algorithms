@@ -24,4 +24,4 @@ public class SumOfDigits {
     public static int sumOfDigitsRecursive(int num) {
         return num == 0 ? 0 : (num % 10) + sumOfDigitsRecursive(num / 10);
     }
-}
+} 
