@@ -6,7 +6,7 @@ public class PermutationArray {
         printPermutationOfArray(nums);
     }
 
-    private static void printPermutationOfArray(int[] nums) {
+    private static void printPermutationOfArray(int[] nums) { 
         int[] ans = new int[nums.length];
 
         for(int i=0;i<nums.length;i++){
