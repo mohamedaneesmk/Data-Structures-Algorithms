@@ -5,7 +5,7 @@ public class LinearSearch {
         // Traverse through all array elements
         for (int i = 0; i < arr.length; i++) {
             // If element is found, return its index
-            if (arr[i] == target) {
+            if (arr[i] == target) { 
                 return i;
             }
         }
