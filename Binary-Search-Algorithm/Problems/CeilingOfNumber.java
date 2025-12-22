@@ -18,7 +18,7 @@ public class CeilingOfNumber {
             return -1;
         }
 
-        while (low <= high) {
+        while (low <= high) { 
             int mid = low + (high - low) / 2;
 
             if (nums[mid] == target) {
