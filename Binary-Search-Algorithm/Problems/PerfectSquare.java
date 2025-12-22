@@ -11,7 +11,7 @@ public class PerfectSquare {
         long low = 2;
         long high = num / 2;
 
-        while (low <= high) {
+        while (low <= high) { 
             long mid = low + (high - low) / 2;
             long square = mid * mid;
 
