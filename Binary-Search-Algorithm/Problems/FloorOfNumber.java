@@ -13,7 +13,7 @@ public class FloorOfNumber {
         int low = 0;
         int high = arr.length - 1;
 
-        if (target < arr[low])
+        if (target < arr[low]) 
             return -1;
 
         while (low <= high) {
