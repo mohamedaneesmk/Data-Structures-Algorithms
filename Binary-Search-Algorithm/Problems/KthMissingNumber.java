@@ -8,7 +8,7 @@ public class KthMissingNumber {
     }
 
     private static int findKthMissingNumber(int[] nums, int k) {
-        int left = 0;
+        int left = 0; 
         int right = nums.length - 1;
 
         while (left <= right) {
