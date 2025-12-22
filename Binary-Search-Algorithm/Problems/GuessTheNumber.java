@@ -2,7 +2,7 @@ public class GuessTheNumber {
 
     // Picked number (this simulates the hidden number)
     private static int pickedNumber = 6;
-
+ 
     public static void main(String[] args) {
         int num = 10;
         int result = findTheNumber(num);
