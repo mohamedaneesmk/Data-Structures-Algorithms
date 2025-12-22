@@ -2,7 +2,7 @@ public class SquareRoot {
     public static void main(String[] args) {
         int num = 8;
         System.out.println(findSquareRoot(num));
-    }
+    } 
 
     private static int findSquareRoot(int num) {
         if (num == 0 || num == 1)
