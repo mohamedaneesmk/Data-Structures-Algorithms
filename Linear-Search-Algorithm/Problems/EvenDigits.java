@@ -20,3 +20,4 @@ public class EvenDigits {
         return (int) Math.log10(Math.abs(num)) + 1;
     }
 }
+ 
