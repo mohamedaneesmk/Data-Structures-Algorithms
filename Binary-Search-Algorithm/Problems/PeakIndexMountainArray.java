@@ -1,6 +1,7 @@
 public class PeakIndexMountainArray {
     public static void main(String[] args) {
-        int[] arr = {0, 1, 0};
+        // int[] arr = {0, 1, 0};
+        int[] arr = {1, 2, 3, 4, 5, 7, 6, 5, 4, 3, 2, 1};
         int result = findPeakIndexMountainArray(arr); 
         System.out.println(result); 
     }
