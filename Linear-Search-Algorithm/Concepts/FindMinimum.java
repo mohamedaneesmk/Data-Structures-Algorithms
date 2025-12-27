@@ -6,7 +6,7 @@ public class FindMinimum {
     }
 
     private static int findMinimum(int[] nums) {
-        int minNum = Integer.MAX_VALUE;
+        int minNum = Integer.MAX_VALUE; 
         for (int num : nums) {
             if (num < minNum) {
                 minNum = num;
