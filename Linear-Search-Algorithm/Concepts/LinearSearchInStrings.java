@@ -1,5 +1,5 @@
 public class LinearSearchInStrings {
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         String name = "Anees";
         char target = 'y'; 
         System.out.println(isCharacterFound(name, target));
