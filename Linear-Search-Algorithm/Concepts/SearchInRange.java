@@ -9,7 +9,7 @@ public class SearchInRange {
 
     private static int linearSearch(int[] array, int start, int end, int target) {
         for (int index = start; index < end; index++) {
-            if (array[index] == target) {
+            if (array[index] == target) { 
                 return index;
             }
         }
