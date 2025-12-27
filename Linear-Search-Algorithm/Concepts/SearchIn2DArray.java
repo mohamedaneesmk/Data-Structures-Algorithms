@@ -27,7 +27,7 @@ public class SearchIn2DArray {
             } else {
                 row++; // move down
             }
-        }
+        } 
         return -1; // not found
     }
 }
