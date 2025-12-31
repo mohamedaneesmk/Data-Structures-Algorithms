@@ -1,59 +1,33 @@
 public class TwoSortedArraysMedianOptimized {
 
     public static void main(String[] args) {
-        int[] nums1 = {1, 2};
-        int[] nums2 = {3, 4};
+        int[] nums1 = { 1, 2 };
+        int[] nums2 = { 3, 4 };
 
         double median = findMedianSortedArrays(nums1, nums2);
         System.out.println(median);
     }
 
     private static double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int n = nums1.length;
+        int m = nums2.length;
 
-        // Always binary search on smaller array
-        if (nums1.length > nums2.length) {
-            return findMedianSortedArrays(nums2, nums1);
+        int total = n + m;
+        int mid = total / 2;
+
+        int i = 0, j = 0, count = 0;
+        int curr = 0, prev = 0;
+
+        while (count <= mid) {
+            prev = curr;
+            if (i < n && (j >= m || nums1[i] <= nums2[j]))
+                curr = nums1[i++];
+            else
+                curr = nums2[j++];
+            count++;
         }
 
-        int n1 = nums1.length;
-        int n2 = nums2.length;
+        return total % 2 == 0 ? (prev + curr) / 2.00 : curr;
 
-        int low = 0, high = n1;
-
-        while (low <= high) {
-
-            int cut1 = (low + high) / 2;
-            int cut2 = (n1 + n2 + 1) / 2 - cut1;
-
-            int left1  = (cut1 == 0)  ? Integer.MIN_VALUE : nums1[cut1 - 1];
-            int right1 = (cut1 == n1) ? Integer.MAX_VALUE : nums1[cut1];
-
-            int left2  = (cut2 == 0)  ? Integer.MIN_VALUE : nums2[cut2 - 1];
-            int right2 = (cut2 == n2) ? Integer.MAX_VALUE : nums2[cut2];
-
-            // Correct partition found
-            if (left1 <= right2 && left2 <= right1) {
-
-                // Even length
-                if ((n1 + n2) % 2 == 0) {
-                    return (Math.max(left1, left2) +
-                            Math.min(right1, right2)) / 2.0;
-                }
-                // Odd length
-                else {
-                    return Math.max(left1, left2);
-                }
-            }
-            // Move left
-            else if (left1 > right2) {
-                high = cut1 - 1;
-            }
-            // Move right
-            else {
-                low = cut1 + 1;
-            }
-        }
-
-        return 0.0; // Will never reach here for valid input
     }
 }
