@@ -1,32 +1,36 @@
+import java.util.Arrays;
+
 public class SelectionSort {
     public static void main(String[] args) {
         int[] nums = { 29, 10, 14, 37, 13 };
         selectionSort(nums);
 
-        for (int num : nums) {
-            System.out.print(num+" ");
-        }
+        System.out.println(Arrays.toString(nums));
     }
 
     private static void selectionSort(int[] nums) {
-        int n = nums.length;
+        for (int i = 0; i < nums.length; i++) {
+            int last = nums.length - i - 1;
+            int maxIndex = getMaxIndex(nums, 0, last);
 
-        for (int i = 0; i < n; i++) {
-            int minIndex = i;
-
-            for (int j = i + 1; j < n; j++) {
-                if (nums[j] < nums[minIndex]) {
-                    minIndex = j;
-                }
-            }
-
-            int temp = nums[minIndex];
-            nums[minIndex] = nums[i];
-            nums[i] = temp;
-
-            // Optional: Print after each pass to see progress
-            // System.out.println("After pass " + (i + 1) + ": " +
-            //        java.util.Arrays.toString(nums));
+            swap(nums, maxIndex, last);
         }
+    }
+
+    private static void swap(int[] nums, int maxIndex, int last) {
+        int temp = nums[maxIndex];
+        nums[maxIndex] = nums[last];
+        nums[last] = temp;
+    }
+
+    private static int getMaxIndex(int[] nums, int start, int end) {
+        int max = start;
+        for (int i = start; i <= end; i++) {
+            if (nums[max] < nums[i]) {
+                max = i;
+            }
+        }
+
+        return max;
     }
 }
