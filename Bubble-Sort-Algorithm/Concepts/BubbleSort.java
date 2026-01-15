@@ -1,6 +1,6 @@
 // Buuble Sort Aslo known as Sinking Sort and Exchanging Sort 
 
-public class BubbleSortEasy {
+public class BubbleSort {
     public static void main(String[] args) {
         // int[] arr = { 5, 3, 4, 1 };
         int[] arr = { 170, 150, 180, 160 };
