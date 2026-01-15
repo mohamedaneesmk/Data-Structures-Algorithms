@@ -34,7 +34,7 @@ public class SelectionSort {
      * 
      * return max;
      * }
-     */
+     */ 
 
     public static void selectionSort(int[] arr) {
         int n = arr.length;
